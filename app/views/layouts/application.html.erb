@@ -2,13 +2,30 @@
 <html>
 <head>
   <title>HelloWorld</title>
-    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <script src="http://use.edgefonts.net/chivo:n9,i9,i4,n4:all.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <nav>
+        <div class="row">
+            <div class="col-xs-12">
+            <h3>Menu</h3>
+            </div>
+        </div>
+    </nav>
 
+<!--<div class="jumbotron" id="welcome">-->
+<h1>Welcome to Fresh Food Leipzig</h1>
+<h3>The freshest Obst und Gemüse in Leipzig</h3>
+<!--</div>-->
 <%= yield %>
+    <%= image_tag("carota.jpg") %>
 
+    <footer>&copy;Adsidera Developing</footer>
 </body>
 </html>

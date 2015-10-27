@@ -1,0 +1,40 @@
+/*// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+body {
+/*    background-color: #ffca95;*/
+    background-color: #ffeecf;
+}
+h1, .jumbotron h1 {
+    font-family: chivo, sans-serif;
+    color: #ff4d00;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+     color:darkslategrey;
+}
+nav, nav h3 {
+    background-color: #588919;
+    font-family: chivo;
+    color: darkslategrey;
+    text-align: right;
+    text-transform: capitalize;
+    height:  50%;
+    margin:auto;
+    padding-right: 1%;
+}
+#welcome {
+    background-image:url(..app\assets\images\carota.jpg);
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color:#588919;
+    text-align: center;
+    color: darkslategrey;
+}
